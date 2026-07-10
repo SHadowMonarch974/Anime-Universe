@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=""width=
+     ,initial-scale=1.0">
+    <title>Solo Leveling</title>
+
+    <link rel="stylesheet"href="solo.css">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="sl-icon.png">
+
+
+</head>
+<body>
+
+<!--==================================
+            LOADING SCREEN
+===================================-->
+
+<div id="loader">
+
+    <video class="loader-video" autoplay muted loop playsinline>
+        <source src="sl-loading.mp4" type="video/mp4">
+    </video>
+
+    <div class="loader-overlay"></div>
+
+    <div class="loader-content">
+
+        <h1 class="loader-title">SOLO LEVELING</h1>
+
+        <p id="systemText">SYSTEM INITIALIZING...</p>
+
+        <div class="loading-bar">
+            <div class="loading-fill"></div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!--==================================
+        BACKGROUND VIDEO
+===================================-->
+
+<video class="bg-video" autoplay muted loop playsinline>
+    <source src="sl-bg.mp4" type="video/mp4">
+</video>
+
+
+<!--==================================
+            DARK OVERLAY
+===================================-->
+
+<div class="overlay"></div>
+
+
+<!--==================================
+        FLOATING PARTICLES
+===================================-->
+
+<div class="particles">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+
+<!--==================================
+            NAVIGATION
+===================================-->
+
+<nav class="navbar">
+
+    <a href="#intro">Introduction</a>
+
+    <a href="#character">Character</a>
+
+    <div class="nav-logo">
+        SOLO LEVELING
+    </div>
+
+    <a href="#system">System</a>
+
+    <a href="#shadows">Shadows</a>
+
+    <a href="#ranks">Ranks</a>
+
+</nav>
+
+
+<!--==================================
+            HERO SECTION
+===================================-->
+
+<section class="hero">
+
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="sl-arise.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <p class="hero-tag">
+            ANIME • MANHWA • ACTION FANTASY
+        </p>
+
+        <h1 class="title">
+            SOLO LEVELING
+        </h1>
+
+        <h2 class="hero-subtitle">
+            ARISE.
+        </h2>
+
+        <p class="hero-description">
+            From the World's Weakest Hunter to the Shadow Monarch.
+        </p>
+
+        <a href="#intro" class="hero-btn">
+            EXPLORE THE WORLD
+        </a>
+
+        <div class="scroll-indicator">
+            <span></span>
+            <p>SCROLL</p>
+        </div>
+
+    </div>
+
+</section>
+<!--==================================
+        SHADOW SYSTEM ORB
+===================================-->
+
+<div class="system-container">
+
+    <!-- System Orb -->
+    <div class="system-orb">
+        <video autoplay muted loop playsinline>
+            <source src="sl panel close.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- System Panel -->
+    <div class="system-panel">
+
+        <video class="panel-video" autoplay muted loop playsinline>
+            <source src="sl panel open.mp4" type="video/mp4">
+        </video>
+
+        <div class="panel-overlay"></div>
+
+        <div class="panel-content">
+
+            <!-- Close Button -->
+            <button class="close-panel" id="closePanel">
+                ✖
+            </button>
+
+            <h2 class="system-title">
+                ⚔ SHADOW SYSTEM
+            </h2>
+
+            <!--==============================
+                    MUSIC HEADER
+            ==============================-->
+
+            <div class="music-header">
+                <p class="music-name">DARK ARIA</p>
+            </div>
+
+            <!--==============================
+                    MUSIC PROGRESS
+            ==============================-->
+
+            <div class="music-progress">
+
+                <div class="time-row">
+                    <span id="currentTime">0:00</span>
+                    <span id="duration">0:00</span>
+                </div>
+
+                <div class="progress-bar" id="progressBar">
+                    <div class="progress" id="progress"></div>
+                </div>
+
+            </div>
+
+            <!--==============================
+                    MUSIC SETTINGS
+            ==============================-->
+
+            <div class="music-row">
+
+                <span>Music</span>
+
+                <label class="switch">
+                    <input type="checkbox" id="musicToggle" checked>
+                    <span class="slider"></span>
+                </label>
+
+            </div>
+
+            <div class="music-row column">
+
+                <span>Volume</span>
+
+                <input
+                    type="range"
+                    id="volumeSlider"
+                    min="0"
+                    max="100"
+                    value="50">
+
+            </div>
+
+            <!--==============================
+                    BACKGROUND MUSIC
+            ==============================-->
+
+            <audio id="bgMusic" loop>
+                <source src="solo leveling music.mp4" type="audio/mp4">
+            </audio>
+
+            <!--==============================
+                    MUSIC CONTROLS
+            ==============================-->
+
+            <div class="controls">
+
+                <div class="neutrl">
+
+                    <button id="musicBtn" class="music-btn">
+                        ● SYSTEM STANDBY
+                    </button>
+
+                    <!-- Visualizer -->
+                    <div class="visualizer">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--==============================
+                    SYSTEM CONSOLE
+            ==============================-->
+
+            <div class="system-console">
+
+                <div class="console-title">
+                    SYSTEM STATUS
+                </div>
+
+                <p id="systemQuote">
+                    ARISE.
+                </p>
+
+            </div>
+
+            <!--==============================
+                    SHADOW AURA
+            ==============================-->
+
+            <div class="aura-box">
+
+                <div class="aura-top">
+                    <span>SHADOW AURA</span>
+                    <span id="auraPercent">72%</span>
+                </div>
+
+                <div class="aura-bar">
+                    <div class="aura-fill"></div>
+                </div>
+
+                <p class="aura-rank">
+                    SHADOW MONARCH
+                </p>
+
+            </div>
+     
+<div class="hunter-card">
+
+    <h3>HUNTER PROFILE</h3>
+
+    <div class="hunter-row">
+        <span>Name</span>
+        <span>Sung Jin-Woo</span>
+    </div>
+
+    <div class="hunter-row">
+        <span>Rank</span>
+        <span class="rank-text">
+            SHADOW MONARCH
+        </span>
+    </div>
+
+    <div class="hunter-row">
+        <span>Level</span>
+        <span id="hunterLevel">99</span>
+    </div>
+
+    <div class="hunter-row">
+        <span>Title</span>
+        <span>King of Shadows</span>
+    </div>
+
+</div>
+   </div>>
+    </div>>
+</div>
+
+
+<!--==================================
+        SYSTEM QUEST WINDOW
+===================================-->
+
+<div class="quest-popup" id="questPopup">
+
+    <div class="system-header">
+        SYSTEM
+    </div>
+
+    <h3 id="questTitle">
+        NEW QUEST
+    </h3>
+
+    <p id="questText">
+        Complete Daily Quest
+    </p>
+
+    <div class="reward">
+        <span>Reward</span>
+
+        <span id="rewardText">
+            +100 EXP
+        </span>
+    </div>
+
+</div>
+
+
+<!--==================================
+        SYSTEM NOTIFICATION
+===================================-->
+
+<div class="system-flash" id="systemFlash"></div>
+
+<audio id="systemSound">
+    <source src="system.mp4" type="audio/mp4">
+</audio>
+
+
+<!--==================================
+            INTRODUCTION
+===================================-->
+
+<section class="section" id="intro">
+
+    <h1 class="title">
+        Solo Leveling
+    </h1>
+
+    <div class="logo-container">
+        <img
+            src="sl.jpg"
+            alt="Solo Leveling Logo"
+            class="logo">
+    </div>
+
+    <h2>Introduction</h2>
+
+    <p>
+        Solo Leveling is a South Korean fantasy web novel and manhwa written by
+        Chugong. It follows Sung Jin-Woo, the world's weakest hunter, who gains
+        a mysterious System that allows him to level up and become stronger
+        after every battle.
+    </p>
+
+</section>
+
+<hr>
+
+
+<!--==================================
+            STORY OVERVIEW
+===================================-->
+
+<section class="section" id="story">
+
+    <h2>Story Overview</h2>
+
+    <p>
+        Sung Jin-Woo begins his journey as the weakest hunter alive, barely
+        surviving low-level dungeons. After surviving the Double Dungeon, he
+        awakens the System and begins his rise to become the Shadow Monarch.
+    </p>
+
+</section>
+
+<hr>
+
+
+<!--==================================
+        SIGNATURE ABILITIES
+===================================-->
+
+<section class="section" id="abilities">
+
+    <h2>Signature Abilities</h2>
+
+    <ul>
+        <li>Shadow Extraction</li>
+        <li>Shadow Storage</li>
+        <li>Stealth</li>
+        <li>Dagger Mastery</li>
+        <li>Quick Recovery</li>
+        <li>Sprint</li>
+        <li>Ruler's Authority</li>
+        <li>Shadow Exchange</li>
+    </ul>
+
+</section>
+
+<hr>
+
+    <!-- ======================================
+            SHADOW MONARCH
+    ======================================= -->
+
+    <div class="section" id="monarch">
+
+        <h2>Shadow Monarch Powers</h2>
+
+        <p>
+            After inheriting Ashborn's power, Jin-Woo becomes the Shadow
+            Monarch and commands an endless army of shadows to protect humanity.
+        </p>
+
+    </div>
+
+    <hr>
+
+    <!-- ======================================
+            IMPORTANT LOCATIONS
+    ======================================= -->
+
+    <div class="section" id="locations">
+
+        <h2>Important Locations</h2>
+
+        <ul>
+            <li>Double Dungeon</li>
+            <li>Demon Castle</li>
+            <li>Jeju Island</li>
+            <li>Red Gate</li>
+            <li>Tokyo Gate</li>
+            <li>The Monarchs' Battlefield</li>
+        </ul>
+
+    </div>
+
+    <hr>
+
+    <!-- ======================================
+                MAIN CHARACTER
+    ======================================= -->
+
+    <div class="section" id="character">
+
+        <h2>Main Character</h2>
+
+        <h3>Sung Jin-Woo</h3>
+
+        <ul>
+            <li>Originally the weakest E-Rank Hunter.</li>
+            <li>Obtains the System.</li>
+            <li>Can level up endlessly.</li>
+            <li>Becomes the Shadow Monarch.</li>
+        </ul>
+
+        <video controls>
+            <source src="jinwoo.mp4" type="video/mp4">
+        </video>
+
+    </div>
+
+    <hr>
+
+    <!-- ======================================
+                    SYSTEM
+    ======================================= -->
+
+    <div class="section" id="system">
+
+        <h2>The System</h2>
+
+        <p>
+            The System grants quests, rewards, experience points,
+            and abilities that allow Jin-Woo to continuously grow stronger.
+        </p>
+
+    </div>
+
+    <hr>
+
+    <!-- ======================================
+                SHADOW ARMY
+    ======================================= -->
+
+    <div class="section" id="shadows">
+
+        <h2>Shadow Army</h2>
+
+        <ul>
+            <li>Created from defeated enemies.</li>
+            <li>Completely loyal.</li>
+            <li>Can be summoned instantly.</li>
+            <li>Grows stronger after every battle.</li>
+        </ul>
+
+        <h3>Famous Shadows</h3>
+
+        <ul>
+            <li>Beru</li>
+            <li>Igris</li>
+            <li>Iron</li>
+            <li>Tusk</li>
+            <li>Bellion</li>
+        </ul>
+
+    </div>
+
+    <hr>
+
+    <!-- ======================================
+            IMPORTANT CHARACTERS
+    ======================================= -->
+
+    <div class="section" id="characters">
+
+        <h2>Important Characters</h2>
+
+        <table>
+
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+            </tr>
+
+            <tr><td>Sung Jin-Woo</td><td>Shadow Monarch</td></tr>
+            <tr><td>Cha Hae-In</td><td>S-Rank Hunter</td></tr>
+            <tr><td>Go Gun-Hee</td><td>Chairman</td></tr>
+            <tr><td>Woo Jin-Chul</td><td>Inspector</td></tr>
+            <tr><td>Thomas Andre</td><td>National Hunter</td></tr>
+
+        </table>
+
+    </div>
+
+    <hr>
+
+    <!-- ======================================
+                HUNTER RANKS
+    ======================================= -->
+
+    <div class="section" id="ranks">
+
+        <h2>Hunter Ranks</h2>
+
+        <ul>
+            <li>E-Rank</li>
+            <li>D-Rank</li>
+            <li>C-Rank</li>
+            <li>B-Rank</li>
+            <li>A-Rank</li>
+            <li>S-Rank</li>
+        </ul>
+
+    </div>
+
+    <hr>
+
+    <!-- ======================================
+                MAJOR THEMES
+    ======================================= -->
+
+    <div class="section" id="themes">
+
+        <h2>Major Themes</h2>
+
+        <ul>
+            <li>Growth</li>
+            <li>Determination</li>
+            <li>Power</li>
+            <li>Loyalty</li>
+        </ul>
+
+    </div>
+
+    <hr>
+
+    <!-- ======================================
+                    FUN FACTS
+    ======================================= -->
+
+    <div class="section" id="facts">
+
+        <h2>Fun Facts</h2>
+
+        <ul>
+            <li>Started as a web novel.</li>
+            <li>One of the world's most popular manhwa.</li>
+            <li>The anime introduced millions of new fans.</li>
+            <li>"Arise" became an iconic quote.</li>
+            <li>Beru is a fan favorite.</li>
+        </ul>
+
+    </div>
+
+    <hr>
+
+    <!-- ======================================
+                FAMOUS QUOTES
+    ======================================= -->
+
+    <div class="section" id="quotes">
+
+        <h2>Famous Quotes</h2>
+
+        <blockquote>"Arise."</blockquote>
+
+        <blockquote>
+            "The weak hunt in packs, but the strong hunt alone."
+        </blockquote>
+
+    </div>
+
+    <hr>
+
+    <!-- ======================================
+                HUNTER STATS
+    ======================================= -->
+
+    <div class="section" id="stats">
+
+        <h2>Hunter Statistics</h2>
+
+        <div class="stats">
+
+            <div>
+                <h3>Strength</h3>
+                <p>★★★★★</p>
+            </div>
+
+            <div>
+                <h3>Speed</h3>
+                <p>★★★★★</p>
+            </div>
+
+            <div>
+                <h3>Intelligence</h3>
+                <p>★★★★★</p>
+            </div>
+
+            <div>
+                <h3>Shadow Power</h3>
+                <p>∞</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!-- ======================================
+                CONCLUSION
+    ======================================= -->
+
+    <div class="section" id="conclusion">
+
+        <h2>Conclusion</h2>
+
+        <p>
+            Solo Leveling has become one of the most popular action-fantasy
+            series worldwide thanks to its incredible battles, memorable
+            characters, and Sung Jin-Woo's legendary journey.
+        </p>
+
+    </div>
+
+
+    <script src="solo.js"></script>
+
+</body>
