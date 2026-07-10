@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attack ON Tittan</title>
+    <link rel="stylesheet" href="aot.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="aot-logo.png">
+
+</head>
+
+<body>
+
+<footer>
+
+    <img src="scout.png" alt="Scout Regiment">
+
+    <h2>SHINZOU WO SASAGEYO</h2>
+
+    <p>
+        Humanity's hope lives beyond the Walls.
+    </p>
+
+    <div class="footer-line"></div>
+
+    <small>
+             BE CAREFUL <br>
+             They Are Watching You
+    </small>
+
+</footer>
+
+    <!--==========================================
+                LOADER
+===========================================-->
+
+<div id="loader">
+
+    <div class="loader-content">
+
+        <img src="scout.png" alt="Scout Regiment">
+
+        <h1>ATTACK ON TITAN</h1>
+
+        <h2>🪽</h2>
+
+        <p class="loader-text">
+
+            DEDICATE YOUR HEARTS
+
+        </p>
+
+        <div class="loading-bar">
+
+            <div class="loading-fill"></div>
+
+        </div>
+
+        <span class="loading-word">
+
+            "Preparing for Expedition Beyond the Walls..."
+
+        </span>
+
+    </div>
+
+</div>
+
+    <nav class="navbar">
+
+    <div class="logo">
+    <pre>ATTACK ON</pre>  <pre>  TITTAN</pre> 
+  
+        </div>
+   
+
+    <ul>
+
+        <li><a href="#">Home</a></li>
+
+        <li><a href="#intro">Story</a></li>
+
+        <li><a href="#characters">Characters</a></li>
+
+        <li><a href="#titans">Titans</a></li>
+
+        <li><a href="#themes">Themes</a></li>
+
+    </ul>
+    <br>
+
+</nav>
+       
+<audio id="bgMusic" loop>
+    <source src="aot back.mp4" type="audio/mp4">
+</audio>
+
+<div class="command-emblem">🪽</div>
+
+<div id="music-panel">
+
+    <button id="panel-toggle" aria-label="Open Music Panel">
+        🪽
+    </button>
+
+    <div class="panel-embers">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div id="panel-content">
+
+        <div class="scan-line"></div>
+        <div class="status-led"></div>
+
+        <div class="rivets">
+            <span class="r1"></span>
+            <span class="r2"></span>
+            <span class="r3"></span>
+            <span class="r4"></span>
+        </div>
+
+        <div class="panel-header">
+
+            <div class="title-group">
+                <h3>🪽 WINGS OF<br>FREEDOM</h3>
+                <p class="panel-subtitle">
+                    SCOUT REGIMENT COMMAND
+                </p>
+            </div>
+
+            <button id="close-panel" aria-label="Close Music Panel">
+                ✕
+            </button>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <label id="volume-label">
+            🔊 AUDIO OUTPUT 35%
+        </label>
+
+        <input
+            id="volume-slider"
+            type="range"
+            min="0"
+            max="100"
+            value="35"
+        >
+
+        <div id="music-visualizer">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="music-progress">
+            <div id="progress-bar"></div>
+        </div>
+
+        <div id="time-display">
+            <span id="current-time">0:00</span>
+            <span id="duration">0:00</span>
+        </div>
+
+        <button id="music-btn">
+            ▶ Play Music
+        </button>
+
+        <div class="now-playing">
+            <span id="music-status">STANDBY</span>
+            <p id="music-title">
+                Click Play Music
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+<video class="bg-video" autoplay muted loop playsinline>
+    <source src="scout.mp4" type="video/mp4">
+</video>
+
+<div class="smoke"></div>
+<div class="embers"></div>
+
+<header class="hero">
+
+    <img
+        src="hero.jpg"
+        alt="Attack on Titan"
+        class="hero-image">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+        <h1>ATTACK ON TITAN</h1>
+
+        <p>Humanity's Last Hope</p>
+
+        <a href="#intro" class="enter-btn">
+            ⚔ ENTER THE WALLS ⚔
+        </a>
+
+        <p class="scroll-text">
+            ↓ SCROLL DOWN ↓
+        </p>
+
+    </div>
+
+</header>
+
+
+<!-- ==========================================
+                INTRODUCTION
+========================================== -->
+
+<section id="intro" class="reveal">
+
+    <h1 class="section-title">INTRODUCTION</h1>
+
+    <p>
+        Attack on Titan (Japanese: Shingeki no Kyojin) is one of the most influential
+        anime and manga series of the 21st century. Created by Hajime Isayama, it
+        debuted as a manga in 2009, while the anime adaptation began in 2013.
+    </p>
+
+    <p>
+        The story takes place in a world where humanity survives behind enormous
+        walls to protect itself from giant humanoid creatures known as Titans.
+    </p>
+
+</section>
+
+<!-- ==========================================
+            BACKGROUND
+========================================== -->
+
+<section class="reveal">
+
+    <h1 class="section-title">BACKGROUND OF THE STORY</h1>
+
+
+    <div class="story">
+
+        <div>
+
+            <p>
+                For over a century, humans have lived inside three concentric walls:
+            </p>
+
+            <ul>
+                <li>Wall Maria</li>
+                <li>Wall Rose</li>
+                <li>Wall Sina</li>
+            </ul>
+
+        </div>
+
+        <img
+            src="back.jpg"
+            alt="Wall Maria"
+            width="400"
+            height="450">
+
+    </div>
+
+</section>
+
+<p class="reveal">
+    The people believe these walls are humanity's only protection against the
+    Titans, mysterious giants that devour humans.
+</p>
+
+<p class="reveal">
+    Peace is shattered when the Colossal Titan breaches the outer wall,
+    allowing Titans to invade and destroy entire cities.
+</p>
+<!--==========================
+    EREN YEAGER
+===============================-->
+<hr class="reveal">
+<h1 id="characters" class="section-title reveal">
+    MAIN CHARACTERS
+</h1>
+<div class="character-card eren-card reveal">
+
+
+    <div class="rocks">
+        <img src="rock.png" class="rock rock1">
+        <img src="rock.png" class="rock rock2">
+        <img src="rock.png" class="rock rock3">
+        <img src="rock.png" class="rock rock4">
+        <img src="rock.png" class="rock rock5">
+        <img src="rock.png" class="rock rock6">
+    </div>
+
+
+
+    <div class="character-info">
+
+        <div class="character-title">
+            <img src="scout.png" alt="Scout Regiment">
+            <h2>1. EREN YEAGER</h2>
+        </div>
+
+        <div class="divider"></div>
+
+        <ul class="character-list">
+            <li>The protagonist of the series.</li>
+            <li>Witnessed the death of his mother.</li>
+            <li>Swore to destroy every Titan.</li>
+            <li>Inherited the Attack Titan.</li>
+        </ul>
+
+    </div>
+
+    <div class="character-video">
+        <video controls preload="metadata">
+            <source src="eren.mp4" type="video/mp4">
+        </video>
+    </div>
+
+</div>
+
+
+<!-- =========================
+        MIKASA
+========================= -->
+
+<div class="character-card mikasa-card reveal">
+
+  <div class="petals">
+    <img src="petal.png" class="petal p1" alt="">
+    <img src="petal.png" class="petal p2" alt="">
+    <img src="petal.png" class="petal p3" alt="">
+    <img src="petal.png" class="petal p4" alt="">
+    <img src="petal.png" class="petal p5" alt="">
+    <img src="petal.png" class="petal p6" alt="">
+    <img src="petal.png" class="petal p7" alt="">
+    <img src="petal.png" class="petal p8" alt="">
+</div>
+
+
+
+    <div class="character-info">
+
+        <div class="character-title">
+            <img src="scout.png" alt="Scout Regiment">
+            
+           
+            <h2>2. MIKASA ACKERMAN</h2>
+        </div>
+
+        <div class="divider"></div>
+
+        <ul class="character-list">
+            <li>Eren's adoptive sister.</li>
+            <li>One of humanity's strongest soldiers.</li>
+            <li>Exceptionally skilled with ODM Gear.</li>
+            <li>Fiercely loyal to Eren.</li>
+        </ul>
+
+    </div>
+  
+
+    <div class="character-video">
+        <video controls preload="metadata">
+            <source src="mikasa.mp4" type="video/mp4">
+        </video>
+    </div>
+
+</div>
+
+<!-- =========================
+        ARMIN
+========================= -->
+
+<div class="character-card armin-card reveal">
+
+
+
+    <!-- Armin's Leaves -->
+    <div class="leaves">
+        <img src="leaf.png" class="leaf l1" alt="">
+        <img src="leaf.png" class="leaf l2" alt="">
+        <img src="leaf.png" class="leaf l3" alt="">
+        <img src="leaf.png" class="leaf l4" alt="">
+        <img src="leaf.png" class="leaf l5" alt="">
+        <img src="leaf.png" class="leaf l6" alt="">
+        <img src="leaf.png" class="leaf l7" alt="">
+        <img src="leaf.png" class="leaf l8" alt="">
+    </div>
+
+    <div class="character-info">
+
+        <div class="character-title">
+            <img src="scout.png" alt="Scout Regiment">
+            <h2>3. ARMIN ARLERT</h2>
+        </div>
+
+        <div class="divider"></div>
+
+        <ul class="character-list">
+            <li>Eren's childhood friend.</li>
+            <li>Known for his brilliant strategies.</li>
+            <li>Always thinks before fighting.</li>
+            <li>Later inherits the Colossal Titan.</li>
+        </ul>
+
+     </div>
+                    <div class="character-video">
+        <video controls preload="metadata">
+            <source src="armin.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+<!-- =========================
+        LEVI
+========================= -->
+
+<div class="character-card levi-card reveal">
+
+   <div class="sparks">
+
+    <img src="spark.png" class="spark s1">
+    <img src="spark.png" class="spark s2">
+    <img src="spark.png" class="spark s3">
+    <img src="spark.png" class="spark s4">
+    <img src="spark.png" class="spark s5">
+    <img src="spark.png" class="spark s6">
+    <img src="spark.png" class="spark s7">
+    <img src="spark.png" class="spark s8">
+
+</div>
+
+
+    <div class="character-info">
+
+        <div class="character-title">
+            <img src="scout.png" alt="Scout Regiment">
+            <h2>4. LEVI ACKERMAN</h2>
+        </div>
+
+        <div class="divider"></div>
+
+        <ul class="character-list">
+            <li>Captain of the Scout Regiment.</li>
+            <li>Known as Humanity's Strongest Soldier.</li>
+            <li>Master of ODM combat.</li>
+            <li>Respected throughout the military.</li>
+        </ul>
+
+    </div>
+
+    <div class="character-video">
+        <video controls preload="metadata">
+            <source src="levi.mp4" type="video/mp4">
+        </video>
+    </div>
+
+</div>
+
+<!-- =========================
+        ERWIN
+========================= -->
+
+<div class="character-card erwin-card reveal">
+
+<!-- Erwin Particles -->
+<div class="erwin-effects">
+
+    <!-- Feathers -->
+    <img src="feather.png" class="erwin-feather f1">
+    <img src="feather.png" class="erwin-feather f2">
+    <img src="feather.png" class="erwin-feather f3">
+    <img src="feather.png" class="erwin-feather f4">
+</div>
+
+    <div class="character-info">
+
+        <div class="character-title">
+            <img src="scout.png" alt="Scout Regiment">
+            <h2>5. ERWIN SMITH</h2>
+        </div>
+
+        <div class="divider"></div>
+
+        <ul class="character-list">
+            <li>Commander of the Scout Regiment.</li>
+            <li>A brilliant military strategist.</li>
+            <li>Inspired soldiers to sacrifice everything.</li>
+            <li>Dedicated his life to uncovering the truth.</li>
+        </ul>
+
+    </div>
+
+    <div class="character-video">
+        <video controls preload="metadata">
+            <source src="ervin.mp4" type="video/mp4">
+        </video>
+    </div>
+
+</div>
+
+<hr class="reveal">
+
+<!-- ==========================================
+                TITANS
+========================================== -->
+
+<hr class="reveal">
+
+<section class="info-card reveal" id="titans">
+
+    <h2 class="section-title">TITANS</h2>
+
+    <p>
+        Titans are giant humanoid creatures ranging from only a few meters
+        to over sixty meters in height. Most Titans possess little or no
+        intelligence and exist only to hunt and devour humans.
+    </p>
+
+</section>
+
+<!-- ==========================================
+            TYPES OF TITANS
+========================================== -->
+
+<hr class="reveal">
+
+<section class="info-card reveal">
+
+    <h2 class="section-title">TYPES OF TITANS</h2>
+
+    <div class="info-block">
+
+        <h3>PURE TITANS</h3>
+
+        <ul class="character-list">
+            <li>Ordinary Titans with almost no intelligence.</li>
+            <li>Wander without purpose.</li>
+            <li>Attack humans instinctively.</li>
+        </ul>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="info-block">
+
+        <h3>THE NINE TITANS</h3>
+
+        <p>
+            Nine unique Titan powers exist, each possessing extraordinary
+            abilities passed down through inheritance.
+        </p>
+
+        <ul class="character-list">
+            <li>Attack Titan</li>
+            <li>Founding Titan</li>
+            <li>Colossal Titan</li>
+            <li>Armored Titan</li>
+            <li>Female Titan</li>
+            <li>Beast Titan</li>
+            <li>War Hammer Titan</li>
+            <li>Jaw Titan</li>
+            <li>Cart Titan</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+            MILITARY DIVISIONS
+========================================== -->
+
+<hr class="reveal">
+
+<section class="info-card reveal" id="characters">
+
+    <h2 class="section-title">MILITARY DIVISIONS</h2>
+
+    <div class="info-block">
+
+        <h3>SCOUT REGIMENT</h3>
+
+        <ul class="character-list">
+            <li>Explores beyond the Walls.</li>
+            <li>Fights Titans directly.</li>
+            <li>Includes Levi, Erwin, Eren, Mikasa and Armin.</li>
+        </ul>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="info-block">
+
+        <h3>GARRISON REGIMENT</h3>
+
+        <ul class="character-list">
+            <li>Protects cities and defensive walls.</li>
+            <li>Responsible for civilian safety.</li>
+        </ul>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="info-block">
+
+        <h3>MILITARY POLICE</h3>
+
+        <ul class="character-list">
+            <li>Protects the Royal Government.</li>
+            <li>Operates mainly inside Wall Sina.</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+            MAJOR THEMES
+========================================== -->
+
+<hr class="reveal">
+
+<section class="info-card reveal" id="themes">
+
+    <h2 class="section-title">MAJOR THEMES</h2>
+
+    <div class="info-block">
+
+        <h3>FREEDOM</h3>
+
+        <ul class="character-list">
+            <li>Eren dreams of a world beyond the Walls.</li>
+            <li>Freedom drives almost every major decision.</li>
+        </ul>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="info-block">
+
+        <h3>SURVIVAL</h3>
+
+        <ul class="character-list">
+            <li>Humanity constantly struggles against extinction.</li>
+            <li>Every victory comes with sacrifice.</li>
+        </ul>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="info-block">
+
+        <h3>WAR & CONFLICT</h3>
+
+        <ul class="character-list">
+            <li>The series explores hatred across generations.</li>
+            <li>War changes both heroes and enemies.</li>
+        </ul>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="info-block">
+
+        <h3>TRUTH & DECEPTION</h3>
+
+        <ul class="character-list">
+            <li>The Walls hide countless secrets.</li>
+            <li>The search for truth changes the fate of humanity.</li>
+        </ul>
+
+    </div>
+
+</section>
+<hr class="reveal">
+
+<section class="timeline reveal" id="timeline">
+
+    <h2 class="section-title">JOURNEY OF HUMANITY</h2>
+
+    <div class="timeline-item">
+        <span class="year">845</span>
+        <div class="timeline-content">
+            <h3>Fall of Shiganshina</h3>
+            <p>The Colossal Titan destroys Wall Maria. Eren loses his mother and vows to destroy every Titan.</p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="year">850</span>
+        <div class="timeline-content">
+            <h3>Cadet Graduation</h3>
+            <p>Eren, Mikasa, and Armin join the Survey Corps after completing military training.</p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="year">Return</span>
+        <div class="timeline-content">
+            <h3>Shiganshina Arc</h3>
+            <p>Humanity finally retakes Wall Maria and uncovers the truth hidden inside Grisha's basement.</p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="year">Final</span>
+        <div class="timeline-content">
+            <h3>The Rumbling</h3>
+            <p>Eren unleashes the Rumbling, forcing his closest friends to make an impossible choice.</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- ==========================================
+            STORY THEMES
+========================================== -->
+
+<section class="info-card reveal">
+
+    <h2 class="section-title">STORY THEMES</h2>
+
+    <div class="info-block">
+
+        <h3>WAR & CONFLICT</h3>
+        
+        <ul class="character-list">
+            <li>The series explores hatred and revenge across generations.</li>
+            <li>Every battle comes with sacrifice and moral consequences.</li>
+        </ul>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="info-block">
+
+        <h3>TRUTH & DECEPTION</h3>
+
+        <ul class="character-list">
+            <li>Humanity lives surrounded by hidden secrets.</li>
+            <li>The mystery of the Titans changes the fate of the world.</li>
+        </ul>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="info-block">
+
+        <h3>MORALITY</h3>
+
+        <ul class="character-list">
+            <li>The story rarely has absolute heroes or villains.</li>
+            <li>Every side believes it is fighting for justice.</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+            STORY DEVELOPMENT
+========================================== -->
+
+<section class="info-card reveal">
+
+    <h2 class="section-title">STORY DEVELOPMENT</h2>
+
+    <div class="info-block">
+
+        <h3>SEASON 1</h3>
+
+        <ul class="character-list">
+            <li>Fall of Wall Maria.</li>
+            <li>Eren joins the military.</li>
+            <li>Discovery of the Attack Titan.</li>
+            <li>Battle against the Female Titan.</li>
+        </ul>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="info-block">
+
+        <h3>SEASON 2</h3>
+
+        <ul class="character-list">
+            <li>Reveals major Titan mysteries.</li>
+            <li>Introduces the Beast Titan.</li>
+            <li>Shocking betrayals change everything.</li>
+        </ul>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="info-block">
+
+        <h3>SEASON 3</h3>
+
+        <ul class="character-list">
+            <li>Political conspiracies inside the Walls.</li>
+            <li>Secrets hidden in Eren's basement.</li>
+            <li>The truth about the outside world.</li>
+        </ul>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="info-block">
+
+        <h3>FINAL SEASON</h3>
+
+        <ul class="character-list">
+            <li>The conflict expands beyond the Walls.</li>
+            <li>Marley and Eldia enter full-scale war.</li>
+            <li>Eren begins the Rumbling.</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+                SYMBOLISM
+========================================== -->
+
+<section class="info-card reveal">
+
+    <h2 class="section-title">SYMBOLISM</h2>
+
+    <div class="info-block">
+
+        <h3>THE WALLS REPRESENT</h3>
+
+        <ul class="character-list">
+            <li>Fear.</li>
+            <li>Isolation.</li>
+            <li>Government control.</li>
+            <li>Humanity's limited understanding of reality.</li>
+        </ul>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="info-block">
+
+        <h3>TITANS REPRESENT</h3>
+
+        <ul class="character-list">
+            <li>Existential threats.</li>
+            <li>Human violence.</li>
+            <li>The endless cycle of hatred.</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+            IMPACT
+========================================== -->
+
+<section class="info-card reveal">
+
+    <h2 class="section-title">IMPACT & POPULARITY</h2>
+
+    <ul class="character-list">
+        <li>Exceptional storytelling.</li>
+        <li>Memorable characters.</li>
+        <li>Outstanding animation.</li>
+        <li>Deep political and philosophical themes.</li>
+        <li>Unexpected plot twists.</li>
+    </ul>
+
+    <p>
+        Attack on Titan became one of the most influential anime series ever created and remains a global phenomenon.
+    </p>
+
+</section>
+
+<!-- ==========================================
+                CONCLUSION
+========================================== -->
+
+<section class="info-card reveal">
+
+    <h2 class="section-title">CONCLUSION</h2>
+
+    <p>
+
+        Attack on Titan is more than an action anime.
+
+        It is a powerful story about freedom, sacrifice, war,
+        revenge and the human desire to fight against fate.
+
+        Through unforgettable characters and incredible world-building,
+        it has become one of the greatest anime of all time.
+
+    </p>
+
+</section>
+
+<hr class="reveal">
+
+<section class="final-section reveal">
+
+    <div class="ending-overlay"></div>
+
+    <h2 class="section-title">FINAL WORDS</h2>
+
+    <blockquote class="final-quote">
+        "If we don't fight... we can't win."
+    </blockquote>
+
+    <p class="quote-author">— Eren Yeager</p>
+
+    <div class="wings">
+        ⚔️ 🕊️ ⚔️
+    </div>
+
+</section>
+
+<script src="aot.js"></script>
+
+</body>
+</html>
+
